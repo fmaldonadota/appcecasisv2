@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.appcecasis.appcecasisv2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.premission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.premission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.premission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logov2"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logov2"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".InicioNoticias"
+            android:label="@string/title_activity_inicio_noticias"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LaboratoriosReserva"
+            android:label="@string/title_activity_laboratorios_reserva"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LaboratorioInicio"
+            android:label="@string/title_activity_laboratorio_inicio"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LaboratorioDisponible"
+            android:label="@string/title_activity_laboratorio_disponible"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".LaboratorioDispoNotificacion" />
+        <activity
+            android:name=".LaboratorioVerReserva"
+            android:label="@string/title_activity_laboratorio_ver_reserva"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MaterialesInicio"
+            android:label="@string/title_activity_materiales_inicio"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MaterialesBusqueda"
+            android:label="@string/title_activity_materiales_busqueda"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MantenimientoInicio"
+            android:label="@string/title_activity_mantenimiento_inicio"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MantenimientoReportes"
+            android:label="@string/title_activity_mantenimiento_reportes"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MantenimientoVerReportes"
+            android:label="@string/title_activity_mantenimiento_ver_reportes"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MantenimientoAsignacion"
+            android:label="@string/title_activity_mantenimiento_asignacion"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".InicioSplash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegistrodeApp"></activity>
+    </application>
+
+</manifest>
